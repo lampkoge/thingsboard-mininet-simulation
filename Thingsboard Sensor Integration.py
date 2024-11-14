@@ -12,7 +12,7 @@ def send_fire_alerts():
     while True:
         # Simulated fire alert data
         data = {
-            "temperature": 75.0,  # Example temperature above the alert threshold
+            "temperature": 55.0,  # Example temperature above the alert threshold
             "fire_alert": True    # This could trigger evacuation
         }
         requests.post(url, headers=headers, data=json.dumps(data))
