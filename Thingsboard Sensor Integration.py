@@ -12,9 +12,8 @@ def send_fire_alerts():
     while True:
         # Simulated fire alert data
         data = {
-            "temperature": 75.0,
-            "smoke_level": 2.5,
-            "fire_alert": True  # this could trigger evacuation
+            "temperature": 75.0,  # Example temperature above the alert threshold
+            "fire_alert": True    # This could trigger evacuation
         }
         requests.post(url, headers=headers, data=json.dumps(data))
         print("Sent fire alert to Thingsboard:", data)
